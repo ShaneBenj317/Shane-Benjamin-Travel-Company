@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shane's Travel Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+body {
+    font: 400 15px Montserrat, sans-serif; 
+    line height: 1.8;
+    color: #818181;
+      }
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+      }
+.jumbotron { 
+    background-color: blue; /* Orange */
+    color: #ffffff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+.container-fluid {
+    padding: 60px 50px;
+   
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo-small {
+    color: #f4511e;
+    font-size: 100px;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.carousel-control.right, .carousel-control-left {
+    background-image: none;
+    color: #f4511e;
+}
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style:italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
+.panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+footer .glyphicon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: f4511e;
+}
+footer p {
+    font-size: 25px;
+    color: black;
+    background-color: lightblue;
+}
+footer {
+    background-color: lightblue;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+.btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+        }
+}
+
+</style>
+    
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Shane Benjamin</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SERVICES WE OFFER</a></li>
+        <li><a href="#pictures">PICTURES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+<h1>Shane's Travel Company</h1> 
+<p>Our mission is to give you the best travel tips to help you save time and money when planning your trips.</p> 
+<form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Give us your best email address!">
+    <button type="button" class="btn btn-danger">Subscribe</button>
+</form>
+</div>
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>We are dedicated to providing you the best travel tips, cheapest flights, and best travel packages on the web!</h2>
+            <h4>Through pointing you in the right direction with major airlines and hotels, we hope to make your travels less hectic so that
+            you can enjoy time spent with family and friends without the hassles and worrying of expensive travel.</h4> 
+            <p>The overall best resources for cheap and affordable airfare include:</p>
+                <ul>
+                    <li><a href="https://www.aa.com/homePage.do">American Airlines</a></li>
+                    <li><a href="https://www.skyscanner.com/?gclid=CIzKq53Jj84CFUEkhgodM70AqA">Skyscanner</a></li>
+                    <li><a href="https://www.cheapoair.com/?fpAffiliate=Google&fpSub=CHEAPOAIR-Brand1&gclid=COTzs73Jj84CFYVehgodaKwMoA">CheapOair</a></li>
+                    <li><a href="http://www.delta.com/">Delta Airlines</a></li>
+                    <li><a href="https://www.kayak.com/">Kayak</a></li>
+                </ul>
+            <button class="btn btn-default btn-lg">Reach Out To Us!</button>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2>Our Core Values</h2>
+            <h4><strong>MISSION:</strong> The mission of this company is to provide you with the most practical travel tips to help you save time and
+            money on your travels. We will be providing you with the cheapest, and most affordable airlines and hotels that will allow you to truly enjoy
+            your vacation.</h4> 
+            <p><strong>VISION:</strong> Our company would like to help people have the resources to be able to travel to the destination of their dreams
+                and to be able to feel comfortable knowing that it's absolutely possible with the tools we are providing.
+        </div>
+    </div>
+</div>
+
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES WE OFFER</h2>
+  <h4>Resources</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-plane logo-small"></span>
+      <h4>Affordable Airline Flights</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home logo-small"></span>
+      <h4>Affordable Hotels</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok-sign logo-small"></span>
+      <h4>Travel Tips</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-book logo-small"></span>
+      <h4>Personal Experiences</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone logo-small"></span>
+      <h4>Customer Support</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-briefcase logo-small"></span>
+      <h4 style="color: #303030;">Travel Packages</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+    
+<div id="Pictures" class="container-fluid text-center bg-grey">
+  <h2>Pictures</h2>
+  <h4>Where We Have Been</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/10065/SITours/privately-customized-tour-of-los-angeles-in-los-angeles-227795.jpg" alt="Los Angeles" width="400" height="300">
+        <p><strong>Los Angeles</strong></p>
+        <p>Los Angeles is the best city in the world!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://assets.fodors.com/destinations/1128/skyline-manhattan-new-york-city-new-york-usa_main.jpg" alt="New York" width="400" height="400">
+        <p><strong>New York City</strong></p>
+        <p>New York City is the most beautiful city in the world!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.sanfrancisco.travel/sites/sftraveldev.prod.acquia-sites.com/files/field/image/site-photo.jpg" alt="San Francisco" width="400" height="400">
+        <p><strong>San Francisco</strong></p>
+        <p>San Francisco has tons of cool sightseeing at Fisherman's Wharf</p>
+      </div>
+    </div>
+</div>
+  
+<h2>Customer Experiences</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"Shane's Travel Company helped my family and I book a cheap trip to Sweden! You rock, Shane!"<br><span style="font-style:normal;">John Smith, President, Lakeshore Communications</span></h4>
+    </div>
+    <div class="item">
+      <h4>"There is only word to describe this company...spectacular!"<br><span style="font-style:normal;">George Johnson, Truck Driver, Redwood Co.</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Saved myself 500 bucks by..switching to Shane's Travel Company!"<br><span style="font-style:normal;">Amy Brown, Hairstylist, Shear Looks</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose the best payment option that suits your needs!</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Wanderer</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Finally</strong> become a member! </p>
+          <p><strong>Access</strong> to Airline Deals</p>
+          <p><strong>Access</strong> to Hotel Deals</p>
+          <p><strong>Access</strong> to Travel Tips</p>
+          <p><strong>Opportunity</strong> for Prizes</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$50</h3>
+          <h4>per year</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div> 
+    </div> 
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Traveler</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Access</strong> to 20% off Airline Flight</p>
+          <p><strong>Access</strong> to 20% off Hotel Deals</p>
+          <p><strong>Access</strong> to in depth travel tips!</p>
+          <p><strong>Access to travel credit</strong> to Travel Credit</p>
+          <p><strong>Opportunity</strong> for cash rewards</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$200</h3>
+          <h4>per year</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div> 
+    </div> 
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Adventurer</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Access</strong> to 50% off airline flights </p>
+          <p><strong>Access</strong> to 40% off hotel deals</p>
+          <p><strong>Access</strong> to all travel tips and hacks!</p>
+          <p><strong>Access</strong> to our 24/7 customer line!</p>
+          <p><strong>Endless</strong> opportunity for large cash rewards!</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$500</h3>
+          <h4>per year</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div>
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we will be with you as soon as possible.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Spring City, PA, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  4846366022</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> SB785814@wcupa.edu</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Shane's Travel Company 2016</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+
+$(document).ready(function(){
+    $("textarea").focus(function(){
+        $(this).css("background-color", "blue");
+    });
+    $("textarea").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+$(document).ready(function(){
+    $("btn").hover(function(){
+        $(this).css("background-color", "blue");
+    });
+});
+
+</script
+  
+</body>
+</html>
